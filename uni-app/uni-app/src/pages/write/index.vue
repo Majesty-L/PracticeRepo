@@ -1,11 +1,30 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png" />
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-    </view>
-    <!-- 添加跳转按钮 -->
-    <button @tap="goToUserProfile" class="nav-btn">跳转到用户资料</button>
+    <!-- todo: 切换练习模式 -->
+    <button @tap="goToUserProfile" class="nav-btn">切换</button>
+    <!-- todo：跳转到有序列表 -->
+    <button @tap="goToUserProfile" class="nav-btn">全部</button>
+    <div class="container">
+      <view class="level">
+        <text>难度</text>
+        <!-- todo: 有三个难度可以切换 -->
+
+      </view>
+      <view class="change">
+        <!-- todo: 切换上下一个 -->
+      </view>
+      <view class="word">
+        <!-- todo: 按钮可以播放一个汉字或词语的音频 -->
+      </view>
+      <view class="message">
+        <!-- todo: 手写区域-->
+         <!-- todo: 练习模式会播放笔顺动画 -->
+      </view>
+      <view class="answer">
+        <!-- todo: 有一个按钮，确认后校验手写区域是否正确 -->
+      </view>
+    </div>
+
   </view>
 </template>
 

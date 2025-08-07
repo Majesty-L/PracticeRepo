@@ -1,20 +1,52 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
-			"path": "pages/index/index",
+			"path": "pages/learn/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "识字"
 			}
 		},
 		{
-			"path": "pages/user-profile/user-profile",
+			"path": "pages/speak/index",
 			"style": {
-				"navigationBarTitleText": "个人资料",
+				"navigationBarTitleText": "发音"
+			}
+		},
+		{
+			"path": "pages/write/index",
+			"style": {
+				"navigationBarTitleText": "手写",
 				"navigationBarBackgroundColor": "#667eea",
 				"navigationBarTextStyle": "white"
 			}
 		}
 	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/learn/index",
+				"iconPath": "static/default-avatar.png",
+				"selectedIconPath": "static/default-avatar.png",
+				"text": "识字"
+			},
+			{
+				"pagePath": "pages/speak/index",
+				"iconPath": "static/default-avatar.png",
+				"selectedIconPath": "static/default-avatar.png",
+				"text": "发音"
+			},
+			{
+				"pagePath": "pages/write/index",
+				"iconPath": "static/default-avatar.png",
+				"selectedIconPath": "static/default-avatar.png",
+				"text": "手写"
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
